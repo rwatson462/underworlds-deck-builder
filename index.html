@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Underworlds deck builder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<script src="https://kit.fontawesome.com/829c3213aa.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="page-banner">
+			<h1>Underworlds Deck Builder</h1>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-3"><!-- navigation pane -->
+					<div class="card bg-primary text-light mb-3">
+						<h4 class="card-header">Navigation</h4>
+						<div class="list-group list-group-flush" id="js-navigation">
+							<a class="list-group-item list-group-item-action" href="#">create deck</a>
+							<a class="list-group-item list-group-item-action" href="#">load existing</a>
+							<a class="list-group-item list-group-item-action" href="#">browse cards</a>
+							<a class="list-group-item list-group-item-action" href="card-user.html">Use a deck in a game</a>
+						</div>
+					</div>
+
+					<div class="card bg-danger text-light mb-3">
+						<h4 class="card-header">Debug</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><a href="#" id="card-reset-filters-btn">Clear filters</a></li>
+							<li class="list-group-item"><a href="#" id="card-show-config-btn">Show config</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col"><!-- content pane -->
+
+				</div>
+			</div>
+		</div>
+
+		<script type="module">
+			import "./js/app.js";
+		</script>
+
+	</body>
+</html>
