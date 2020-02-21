@@ -1,0 +1,98 @@
+@import "../../sass/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+$pink: #F783AC;
+$blue: #007BFF;
+$white: #FFFFFF;
+
+$color-1: $pink;
+
+
+body
+{
+	font-family: 'Lato', Arial, sans-serif;
+	padding-bottom: 1rem;
+}
+
+.page-banner
+{
+    background-color: $color-1;
+    padding: 1rem;
+}
+
+.page-banner h1
+{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.btn
+{
+	border-radius: 1rem;
+}
+
+.card
+{
+	border-radius: 1rem;
+}
+
+.card .list-group:last-child .list-group-item:last-child
+{
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.card-filter-btn-group
+{
+	@extend .mb-2;
+
+	>button
+	{
+		@extend .mb-1;
+		@extend .btn;
+		@extend .btn-outline-secondary;
+
+		*
+		{
+			pointer-events: none;
+		}
+
+		img
+		{
+			width: 1.5rem;
+			vertical-align: top;
+		}
+
+		&:hover span.fa-bookmark, &.active span.fa-bookmark
+		{
+			color: $white;
+		}
+	}
+}
+
+
+.underworlds-card
+{
+	border: 4px solid #4448;
+}
+
+
+#search-text
+{
+	border: 1px solid #444;
+	border-radius: 1rem;
+	@extend .mb-3;
+}
+
+
+span.fa-bookmark
+{
+	color: $blue;
+}
+
+.card-summary-row
+{
+	display: grid;
+	grid-template-columns: 45% 45% 10%;
+}
