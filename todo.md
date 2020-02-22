@@ -10,9 +10,11 @@
 7.  ~~Add 'X' FontAwesome icon next to 'clear filters' button~~
 8.  Create view of a single card
 9.  Create view of multiple cards
-10. Filter multiple card view using current filter options
+10. ~~Filter multiple card view using current filter options~~
 11. Expand filter options to include expansion, season, play type (championship, relic)
 12. ~~Create keyword search feature for cards~~
+12. Deprecate Bootstrap
+13. Only import fontawesome icons required for the project
 13. Create new page for creating a deck
 14. Create functions for saving a deck
 15. Create mechanism for reporting bugs
