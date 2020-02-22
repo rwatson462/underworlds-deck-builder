@@ -1,0 +1,50 @@
+
+// styles for the header section of the deck builder
+
+
+.page-banner
+{
+	background-color: $color-3;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: grid;
+	grid-template-columns: 8rem auto;
+	align-items: center;
+
+	img
+	{
+		vertical-align: top;
+		height: 3rem;
+	}
+
+	h1
+	{
+		font-size: 3rem;
+		line-height: 3rem;
+		margin-bottom: 0;
+		@include font-weight-light;
+	}
+
+	p
+	{
+		text-align: right;
+		margin-bottom: 0;
+
+		a
+		{
+			border: 1px solid $color-2;
+			border-radius: 1rem;
+			padding: 0.25rem 0.5rem;
+			line-height: 3rem;
+			margin-right: 1rem;
+			color: $color-2;
+
+			&:hover
+			{
+				color: $color-1;
+				border-color: $color-1;
+				text-decoration: none;
+			}
+		}
+	}
+}

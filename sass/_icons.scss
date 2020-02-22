@@ -1,0 +1,22 @@
+
+// shortcuts to include font awesomes
+
+.icon-bookmark
+{
+	color: $blue;
+	@extend .fa-fw;
+	@extend .far;
+	@extend .fa-star;
+
+	&.selected
+	{
+		@extend .fas;
+	}
+}
+
+.icon-logo
+{
+	@extend .fa-fw;
+	@extend .fas;
+	@extend .fa-layer-group;
+}

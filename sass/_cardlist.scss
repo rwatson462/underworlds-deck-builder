@@ -1,0 +1,16 @@
+
+// the main control for a list of cards
+
+.cardlist
+{
+
+	>* // any direct descendents
+	{
+		display: grid;
+		grid-template-columns: 45% 45% 10%;
+		border: 1px solid $color-4;
+		margin-bottom: 0.5rem;
+		border-radius: 1rem;
+		padding: 0.25rem 1rem;
+	}
+}
