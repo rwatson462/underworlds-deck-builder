@@ -6,26 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" /> 
 		<link rel="stylesheet" type="text/css" href="css/app.css" />
-		<script src="https://kit.fontawesome.com/829c3213aa.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="page-banner">
-			<h1>Underworlds Deck Builder</h1>
+			<h1>
+				<img src="/images/warbands/universal.png" />
+				<span class="icon-logo"> </span>
+			</h1>
+			<p class="js-navigation">
+				<a href="#">Cards</a>
+				<a href="#">Decks</a>
+			</p>
 		</div>
 
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-3"><!-- navigation pane -->
-					<div class="card bg-primary text-light mb-3">
-						<h4 class="card-header">Navigation</h4>
-						<div class="list-group list-group-flush" id="js-navigation">
-							<a class="list-group-item list-group-item-action" href="#">create deck</a>
-							<a class="list-group-item list-group-item-action" href="#">load existing</a>
-							<a class="list-group-item list-group-item-action" href="#">browse cards</a>
-							<a class="list-group-item list-group-item-action" href="card-user.html">Use a deck in a game</a>
-						</div>
-					</div>
-
 					<div class="card bg-danger text-light mb-3">
 						<h4 class="card-header">Debug</h4>
 						<ul class="list-group list-group-flush">
@@ -88,7 +84,7 @@
 					</div>
 
 					<div class="btn-group card-filter-btn-group custom-toggle">
-						<button type="button" data-config-key="activeCustomFilters" data-config-value="0" title="Bookmarked cards"><span class="fas fa-fw fa-bookmark"> </span></button>
+						<button type="button" data-config-key="activeCustomFilters" data-config-value="0" title="Bookmarked cards"><span class="icon-bookmark selected"> </span></button>
 					</div>
 
 					<div>
@@ -96,15 +92,15 @@
 					</div>
 
 					<p id="js-results-count"></p>
-					<div id="js-content" class="list-group"></div>
+					<div id="js-content" class="cardlist"></div>
 
-					<form>
+					<!-- <form>
 						<div class="import-deck-container">
 							 <label for="import-deck-url">Import from URL</label>
 							 <input type="text" placeholder="URL..." class="form-control" name="import-deck-url" />
 							 <button class="btn btn-primary" id="import-deck-url-btn">Import</button>
 						</div>
-				  </form>
+				  </form> -->
 
 				</div>
 			</div>
