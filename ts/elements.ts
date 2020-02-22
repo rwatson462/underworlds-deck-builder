@@ -5,7 +5,6 @@ import { bookmarkCard } from './view.js';
 export function createCardElement( card: Card ): HTMLElement
 {
 	const container = document.createElement( 'div' );
-	container.classList.add( 'list-group-item', 'card-summary-row' );
 
 	let span = document.createElement( 'span' );
 	span.innerText = `${card.id} - ${card.name}`;
@@ -25,7 +24,9 @@ export function createCardElement( card: Card ): HTMLElement
 	a.addEventListener( 'click', bookmarkCard );
 
 	let el = document.createElement( 'span' );
-	el.classList.add( BookmarkedCards[card.id] ? 'fas' : 'far', 'fa-fw', 'fa-bookmark' );   // change 'fas' to 'far' for outlined version (i.e. not bookmarked)
+	el.classList.add( 'icon-bookmark' );
+	if( BookmarkedCards[card.id] )
+		el.classList.add( 'selected' );
 
 	a.appendChild( el );
 	span.appendChild( a );

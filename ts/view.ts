@@ -5,7 +5,7 @@ import { storeObject } from './storage.js';
 
 export function registerClickHandlers(): void
 {
-	document.querySelectorAll( '#js-navigation a' ).forEach( el => {
+	document.querySelectorAll( '.js-navigation a' ).forEach( el => {
 		el.addEventListener( 'click', handleClick );
 	});
 
@@ -91,14 +91,12 @@ export function bookmarkCard( event: MouseEvent ): void
 	if( BookmarkedCards[ card_id ] )
 	{
 		delete BookmarkedCards[ card_id ];
-		span.classList.remove( 'fas' );
-		span.classList.add( 'far' );
+		span.classList.remove( 'selected' );
 	}
 	else
 	{
 		BookmarkedCards[ card_id ] = true;
-		span.classList.add( 'fas' );
-		span.classList.remove( 'far' );
+		span.classList.add( 'selected' );
 	}
 
 	// update local storage with the bookmarked list, set to expire in approx. 1 year
