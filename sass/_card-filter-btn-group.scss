@@ -1,0 +1,26 @@
+.card-filter-btn-group
+{
+	margin-bottom: 1rem;
+
+	>button
+	{
+		@extend .btn;
+		@extend .btn-outline-secondary;
+
+		*
+		{
+			pointer-events: none;
+		}
+
+		img
+		{
+			width: 1.5rem;
+			vertical-align: top;
+		}
+
+		&:hover span.fa-bookmark, &.active span.fa-bookmark
+		{
+			color: $white;
+		}
+	}
+}

@@ -2,10 +2,9 @@
 // styles for the header section of the deck builder
 
 
-.page-banner
+header
 {
 	background-color: $color-3;
-	padding: 0.5rem;
 	margin-bottom: 0.5rem;
 	display: grid;
 	grid-template-columns: 8rem auto;
@@ -19,10 +18,10 @@
 
 	h1
 	{
+		margin: 0;
 		font-size: 3rem;
 		line-height: 3rem;
-		margin-bottom: 0;
-		@include font-weight-light;
+		@include font-weight-light;  //  found in mixins
 	}
 
 	p

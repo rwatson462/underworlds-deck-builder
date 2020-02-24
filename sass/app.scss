@@ -1,62 +1,31 @@
 // TODO deprecate bootstrap
-@import './bootstrap/scss/bootstrap';
+@import './bootstrap/scss/functions';
+@import './bootstrap/scss/variables';
+@import './bootstrap/scss/mixins';
+@import './bootstrap/scss/button-group';
+@import './bootstrap/scss/buttons';
+@import './bootstrap/scss/forms';
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
 @import './fontawesome-free/scss/fontawesome';
 @import './fontawesome-free/scss/solid';
 @import './fontawesome-free/scss/regular';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
-@import './mixins.scss';
-@import './variables.scss';
-@import './elements.scss';
-@import './icons.scss';
-@import './header.scss';
-@import './cardlist.scss';
+@import './mixins';
+@import './variables';
+@import './elements';
+@import './icons';
+@import './header';
+@import './cardlist';
+@import './card-filter-btn-group';
 
 
 .btn
 {
 	border-radius: 1rem;
 }
-
-.card
-{
-	border-radius: 1rem;
-}
-
-.card .list-group:last-child .list-group-item:last-child
-{
-	border-bottom-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
-}
-
-.card-filter-btn-group
-{
-	@extend .mb-2;
-
-	>button
-	{
-		@extend .mb-1;
-		@extend .btn;
-		@extend .btn-outline-secondary;
-
-		*
-		{
-			pointer-events: none;
-		}
-
-		img
-		{
-			width: 1.5rem;
-			vertical-align: top;
-		}
-
-		&:hover span.fa-bookmark, &.active span.fa-bookmark
-		{
-			color: $white;
-		}
-	}
-}
-
 
 .underworlds-card
 {
@@ -68,5 +37,5 @@
 {
 	border: 1px solid #444;
 	border-radius: 1rem;
-	@extend .mb-3;
+	margin-bottom: 1rem;
 }
