@@ -15,7 +15,7 @@ export function registerClickHandlers(): void
 
 	document.getElementById( 'card-reset-filters-btn' ).addEventListener( 'click', resetToggleBtnState );
 
-	// TODO remove this handler
+	// TODO remove this debugging handler eventually
 	document.getElementById( 'card-show-config-btn' ).addEventListener( 'click', showConfigClick );
 
 	document.getElementById( 'search-text' ).addEventListener( 'keyup', startCardSearch );

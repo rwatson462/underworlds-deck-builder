@@ -52,6 +52,7 @@ export const Config = {
 	]
 };
 
+// TODO Add releases (e.g. Shadespire core, Nightvalue, Dreadfane, etc)
 export const Names = {
 	warbands: [
 		'Universal',
