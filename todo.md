@@ -21,6 +21,6 @@
 16. Create CMS for managing bug reports (keep is really simple - bug is open then closed)
 17. Release deck builder for public consumption!
 18. Fix deluge of bug reports from users
-19. Create functions to exporting deck to other formats (text list, underworldsdb link, deckers?)
+19. Create functions for exporting deck to other formats (text list, underworldsdb link, deckers?)
 20. Create deck evolution feature - using an existing deck, clone it and allow user to change the clone. Link that deck to the one they copied from so the user can view the evolution of iterations
 21. Release!

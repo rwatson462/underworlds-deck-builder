@@ -1,6 +1,7 @@
 
 .DS_Store
-css/*
-js/*
-sass/bootstrap/*
-sass/fontawesome-free/*
+css/
+js/
+sass/bootstrap/
+sass/fontawesome-free/
+webfonts/
